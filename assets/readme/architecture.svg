@@ -1,0 +1,105 @@
+<svg width="960" height="380" viewBox="0 0 960 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architecture — Codex delegates to the Claude in Codex plugin, which invokes your local claude CLI via a native runner or a portable Node bridge">
+  <defs>
+    <linearGradient id="archBg" x1="0" y1="0" x2="960" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#13171F"/>
+      <stop offset="1" stop-color="#0D1016"/>
+    </linearGradient>
+    <radialGradient id="archHalo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(480 172) scale(180 180)">
+      <stop stop-color="#E88E61" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#E88E61" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#E88E61" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="archTile" x1="0" y1="0" x2="0" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EE9A6C"/>
+      <stop offset="1" stop-color="#C56C46"/>
+    </linearGradient>
+    <filter id="archShadow" x="-40" y="-40" width="1040" height="460" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+    <style>
+      .sans { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace; }
+    </style>
+  </defs>
+
+  <g filter="url(#archShadow)">
+    <rect x="20" y="18" width="920" height="344" rx="22" fill="url(#archBg)"/>
+    <rect x="20" y="18" width="920" height="344" rx="22" fill="url(#archHalo)"/>
+    <rect x="20.5" y="18.5" width="919" height="343" rx="21.5" stroke="#242935"/>
+  </g>
+
+  <g transform="translate(72 60)" class="sans">
+    <text x="0" y="0" fill="#E88E61" font-size="10.5" font-weight="700" letter-spacing="0.3em">ARCHITECTURE</text>
+    <text x="0" y="20" fill="#6A7078" font-size="11.5" font-weight="400">Codex delegates the task. The plugin invokes your local CLI. Nothing hosted in between.</text>
+  </g>
+
+  <g transform="translate(178 180)">
+    <rect x="-26" y="-26" width="52" height="52" rx="13" fill="#10141B" stroke="#262B34"/>
+    <g stroke="#C9CED6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(0 0)">
+      <path d="M-8 -7 L-1 0 L-8 7"/>
+      <line x1="3" y1="8" x2="12" y2="8"/>
+    </g>
+  </g>
+  <g class="sans" text-anchor="middle">
+    <text x="178" y="244" fill="#6A7078" font-size="10" font-weight="700" letter-spacing="0.28em">INVOKER</text>
+    <text x="178" y="272" fill="#EDEFF3" font-size="21" font-weight="600" letter-spacing="-0.02em">Codex</text>
+    <text x="178" y="296" fill="#8B919C" font-size="12">App or CLI  ·  /claude skill</text>
+  </g>
+
+  <g transform="translate(480 180)">
+    <circle r="54" fill="none" stroke="#2A2F38" stroke-width="1"/>
+    <rect x="-32" y="-32" width="64" height="64" rx="15" fill="url(#archTile)"/>
+    <g transform="translate(0 0)" stroke="#FFF8F1" stroke-width="2.4" stroke-linecap="round" fill="none">
+      <line x1="0" y1="-8" x2="0" y2="-20"/>
+      <line x1="0" y1="-8" x2="0" y2="-20" transform="rotate(30)"/>
+      <line x1="0" y1="-8" x2="0" y2="-20" transform="rotate(60)"/>
+      <line x1="0" y1="-8" x2="0" y2="-20" transform="rotate(90)"/>
+      <line x1="0" y1="-8" x2="0" y2="-20" transform="rotate(120)"/>
+      <line x1="0" y1="-8" x2="0" y2="-20" transform="rotate(150)"/>
+      <line x1="0" y1="-8" x2="0" y2="-20" transform="rotate(180)"/>
+      <line x1="0" y1="-8" x2="0" y2="-20" transform="rotate(210)"/>
+      <line x1="0" y1="-8" x2="0" y2="-20" transform="rotate(240)"/>
+      <line x1="0" y1="-8" x2="0" y2="-20" transform="rotate(270)"/>
+      <line x1="0" y1="-8" x2="0" y2="-20" transform="rotate(300)"/>
+      <line x1="0" y1="-8" x2="0" y2="-20" transform="rotate(330)"/>
+    </g>
+    <circle cx="0" cy="0" r="4" fill="#FFF8F1"/>
+  </g>
+  <g class="sans" text-anchor="middle">
+    <text x="480" y="244" fill="#E88E61" font-size="10" font-weight="700" letter-spacing="0.28em">PLUGIN  ·  THIS REPO</text>
+    <text x="480" y="272" fill="#EDEFF3" font-size="21" font-weight="600" letter-spacing="-0.02em">Claude in Codex</text>
+    <text x="480" y="296" fill="#8B919C" font-size="12">Native runner preferred  ·  Node bridge fallback</text>
+  </g>
+
+  <g transform="translate(782 180)">
+    <rect x="-26" y="-26" width="52" height="52" rx="13" fill="#10141B" stroke="#262B34"/>
+    <g stroke="#C9CED6" stroke-width="1.6" stroke-linecap="round" fill="none">
+      <line x1="0" y1="-5" x2="0" y2="-12"/>
+      <line x1="0" y1="-5" x2="0" y2="-12" transform="rotate(45)"/>
+      <line x1="0" y1="-5" x2="0" y2="-12" transform="rotate(90)"/>
+      <line x1="0" y1="-5" x2="0" y2="-12" transform="rotate(135)"/>
+      <line x1="0" y1="-5" x2="0" y2="-12" transform="rotate(180)"/>
+      <line x1="0" y1="-5" x2="0" y2="-12" transform="rotate(225)"/>
+      <line x1="0" y1="-5" x2="0" y2="-12" transform="rotate(270)"/>
+      <line x1="0" y1="-5" x2="0" y2="-12" transform="rotate(315)"/>
+    </g>
+    <circle cx="0" cy="0" r="2.8" fill="#C9CED6"/>
+  </g>
+  <g class="sans" text-anchor="middle">
+    <text x="782" y="244" fill="#6A7078" font-size="10" font-weight="700" letter-spacing="0.28em">LOCAL RUNTIME</text>
+    <text x="782" y="272" fill="#EDEFF3" font-size="21" font-weight="600" letter-spacing="-0.02em">claude CLI</text>
+    <text x="782" y="296" fill="#8B919C" font-size="12">Your install  ·  your auth  ·  your credits</text>
+  </g>
+
+  <g>
+    <line x1="210" y1="180" x2="420" y2="180" stroke="#2A2F38" stroke-width="1"/>
+    <path d="M414 176 L422 180 L414 184" stroke="#C9CED6" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="315" y="170" class="sans" text-anchor="middle" fill="#6A7078" font-size="9.5" font-weight="700" letter-spacing="0.32em">DELEGATE</text>
+  </g>
+
+  <g>
+    <line x1="540" y1="180" x2="750" y2="180" stroke="#2A2F38" stroke-width="1"/>
+    <path d="M744 176 L752 180 L744 184" stroke="#C9CED6" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="645" y="170" class="sans" text-anchor="middle" fill="#6A7078" font-size="9.5" font-weight="700" letter-spacing="0.32em">INVOKE</text>
+  </g>
+</svg>

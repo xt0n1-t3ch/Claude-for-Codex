@@ -1,0 +1,13 @@
+<svg width="820" height="18" viewBox="0 0 820 18" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
+  <defs>
+    <linearGradient id="divLine" x1="0" y1="9" x2="820" y2="9" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#242935" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#242935"/>
+      <stop offset="1" stop-color="#242935" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="9" x2="384" y2="9" stroke="url(#divLine)"/>
+  <line x1="436" y1="9" x2="820" y2="9" stroke="url(#divLine)"/>
+  <circle cx="410" cy="9" r="2.6" fill="#E88E61"/>
+  <circle cx="410" cy="9" r="6.2" stroke="#E88E61" stroke-opacity="0.22" fill="none"/>
+</svg>

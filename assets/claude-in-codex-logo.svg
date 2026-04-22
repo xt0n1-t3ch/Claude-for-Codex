@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none">
+<defs>
+<linearGradient id="g" x1="512" y1="52" x2="512" y2="972" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#EC9566"/>
+<stop offset="1" stop-color="#DC7C4F"/>
+</linearGradient>
+<filter id="shadow" x="12" y="28" width="1000" height="1000" filterUnits="userSpaceOnUse">
+<feGaussianBlur stdDeviation="18"/>
+</filter>
+</defs>
+<g filter="url(#shadow)"><rect x="58" y="70" width="914" height="914" rx="170" fill="#000000" fill-opacity="0.22"/></g>
+<rect x="52" y="52" width="920" height="920" rx="170" fill="url(#g)"/>
+<path d="M140 118C250 84 590 92 842 132" stroke="#FFF8F1" stroke-opacity="0.13" stroke-width="22" stroke-linecap="round"/>
+<line x1="512.0" y1="450.0" x2="512.0" y2="242.0" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<line x1="544.9" y1="459.4" x2="632.8" y2="318.6" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<line x1="567.2" y1="483.9" x2="700.9" y2="415.8" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<line x1="574.0" y1="513.1" x2="712.0" y2="515.5" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<line x1="567.2" y1="540.1" x2="670.6" y2="592.8" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<line x1="548.4" y1="562.2" x2="619.0" y2="659.2" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<line x1="514.2" y1="574.0" x2="520.4" y2="753.9" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<line x1="479.1" y1="564.6" x2="376.3" y2="729.1" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<line x1="458.3" y1="543.0" x2="305.9" y2="631.0" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<line x1="450.0" y1="512.0" x2="302.0" y2="512.0" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<line x1="460.0" y1="478.2" x2="332.5" y2="395.4" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<line x1="481.0" y1="458.3" x2="389.0" y2="299.0" stroke="#FFF8F1" stroke-width="50" stroke-linecap="round"/>
+<circle cx="512.0" cy="512.0" r="66" fill="#FFF8F1"/>
+</svg>

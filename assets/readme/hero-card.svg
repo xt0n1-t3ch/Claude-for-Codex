@@ -1,0 +1,80 @@
+<svg width="960" height="380" viewBox="0 0 960 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Claude in Codex — run your local Claude Code inside Codex with a built-in /claude skill">
+  <defs>
+    <linearGradient id="heroSurface" x1="0" y1="0" x2="960" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#13171F"/>
+      <stop offset="1" stop-color="#0D1016"/>
+    </linearGradient>
+    <radialGradient id="heroHalo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(784 190) scale(230 230)">
+      <stop stop-color="#E88E61" stop-opacity="0.26"/>
+      <stop offset="0.45" stop-color="#E88E61" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#E88E61" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heroTile" x1="0" y1="0" x2="0" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EE9A6C"/>
+      <stop offset="1" stop-color="#C56C46"/>
+    </linearGradient>
+    <filter id="heroShadow" x="-40" y="-40" width="1040" height="460" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+    <style>
+      .sans { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace; }
+    </style>
+  </defs>
+
+  <g filter="url(#heroShadow)">
+    <rect x="20" y="18" width="920" height="344" rx="22" fill="url(#heroSurface)"/>
+    <rect x="20" y="18" width="920" height="344" rx="22" fill="url(#heroHalo)"/>
+    <rect x="20.5" y="18.5" width="919" height="343" rx="21.5" stroke="#242935"/>
+  </g>
+
+  <g class="sans" transform="translate(72 0)">
+    <text x="0" y="84" fill="#E88E61" font-size="10.5" font-weight="700" letter-spacing="0.3em">CLAUDE CODE  ·  CODEX PLUGIN</text>
+
+    <text x="0" y="176" font-size="68" font-weight="600" letter-spacing="-0.04em">
+      <tspan fill="#EDEFF3">Claude</tspan><tspan fill="#7A808B" font-style="italic" font-weight="400" dx="18" letter-spacing="-0.02em">in</tspan><tspan fill="#EDEFF3" dx="14" font-weight="600" letter-spacing="-0.04em">Codex</tspan>
+    </text>
+
+    <text x="0" y="220" fill="#9AA0AB" font-size="17" font-weight="400">Run your local Claude Code from inside Codex — with a built-in</text>
+    <text x="0" y="244" fill="#9AA0AB" font-size="17" font-weight="400"><tspan class="mono" fill="#D2D7E1">/claude</tspan> skill and realtime streaming output.</text>
+
+    <g transform="translate(0 304)" class="sans">
+      <text x="0" y="0" fill="#C9CED6" font-size="10.5" font-weight="700" letter-spacing="0.26em">LOCAL FIRST</text>
+      <line x1="104" y1="-10" x2="104" y2="4" stroke="#2F3440"/>
+      <text x="124" y="0" fill="#C9CED6" font-size="10.5" font-weight="700" letter-spacing="0.26em">NATIVE STREAMING</text>
+      <line x1="286" y1="-10" x2="286" y2="4" stroke="#2F3440"/>
+      <text x="306" y="0" fill="#C9CED6" font-size="10.5" font-weight="700" letter-spacing="0.26em">MACOS · LINUX · WINDOWS</text>
+    </g>
+  </g>
+
+  <g transform="translate(784 192)">
+    <circle r="132" fill="none" stroke="#1E2229" stroke-width="1"/>
+    <circle r="96" fill="none" stroke="#262B34" stroke-width="1"/>
+
+    <circle cx="117" cy="-60" r="1.6" fill="#C9CED6" opacity="0.85"/>
+    <circle cx="-84" cy="46" r="2.2" fill="#E88E61"/>
+    <circle cx="68" cy="68" r="1.2" fill="#6A7078"/>
+
+    <g transform="translate(-54 -54)">
+      <rect x="-2" y="2" width="108" height="108" rx="22" fill="#000000" fill-opacity="0.35"/>
+      <rect width="108" height="108" rx="22" fill="url(#heroTile)"/>
+      <g transform="translate(54 54)" stroke="#FFF8F1" stroke-width="4.2" stroke-linecap="round" fill="none">
+        <line x1="0" y1="-14" x2="0" y2="-36"/>
+        <line x1="0" y1="-14" x2="0" y2="-36" transform="rotate(30)"/>
+        <line x1="0" y1="-14" x2="0" y2="-36" transform="rotate(60)"/>
+        <line x1="0" y1="-14" x2="0" y2="-36" transform="rotate(90)"/>
+        <line x1="0" y1="-14" x2="0" y2="-36" transform="rotate(120)"/>
+        <line x1="0" y1="-14" x2="0" y2="-36" transform="rotate(150)"/>
+        <line x1="0" y1="-14" x2="0" y2="-36" transform="rotate(180)"/>
+        <line x1="0" y1="-14" x2="0" y2="-36" transform="rotate(210)"/>
+        <line x1="0" y1="-14" x2="0" y2="-36" transform="rotate(240)"/>
+        <line x1="0" y1="-14" x2="0" y2="-36" transform="rotate(270)"/>
+        <line x1="0" y1="-14" x2="0" y2="-36" transform="rotate(300)"/>
+        <line x1="0" y1="-14" x2="0" y2="-36" transform="rotate(330)"/>
+      </g>
+      <circle cx="54" cy="54" r="7.2" fill="#FFF8F1"/>
+    </g>
+
+    <text x="0" y="164" class="sans" fill="#6A7078" font-size="9.5" text-anchor="middle" letter-spacing="0.32em">NO HOSTED RELAY  ·  LOCAL RUNTIME</text>
+  </g>
+</svg>

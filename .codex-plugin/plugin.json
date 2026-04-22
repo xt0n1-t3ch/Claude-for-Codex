@@ -1,0 +1,54 @@
+{
+  "name": "claude-in-codex",
+  "version": "0.1.0",
+  "description": "A Codex plugin that runs your local Claude Code from inside Codex through a built-in /claude skill and a portable bridge.",
+  "author": {
+    "name": "XT0N1",
+    "url": "https://github.com/xt0n1-t3ch"
+  },
+  "homepage": "https://github.com/xt0n1-t3ch/Claude-for-Codex",
+  "repository": "https://github.com/xt0n1-t3ch/Claude-for-Codex",
+  "license": "Apache-2.0",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "codex",
+    "codex-plugin",
+    "slash-command",
+    "realtime",
+    "local-first",
+    "ai-coding",
+    "developer-tools",
+    "pair-programming"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Claude in Codex",
+    "shortDescription": "Run Claude Code inside Codex with a built-in /claude skill",
+    "longDescription": "Claude in Codex runs your local Claude Code from inside Codex through a bundled /claude skill and a small portable bridge. It prefers a native local runner for rich realtime streaming and falls back to a Node bridge when none is installed. The plugin reuses your existing claude CLI, authentication, model access, and environment — no hosted relay, no telemetry.",
+    "developerName": "XT0N1",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/xt0n1-t3ch/Claude-for-Codex",
+    "privacyPolicyURL": "https://github.com/xt0n1-t3ch/Claude-for-Codex/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/xt0n1-t3ch/Claude-for-Codex/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Use Claude in Codex to implement this feature.",
+      "Use Claude in Codex for a second-opinion review of this change.",
+      "Use Claude in Codex to investigate or debug this issue.",
+      "Use Claude in Codex to polish the layout, spacing, and responsive behavior of this page."
+    ],
+    "brandColor": "#E88E61",
+    "composerIcon": "./assets/claude-in-codex-logo.svg",
+    "logo": "./assets/claude-in-codex-logo.png",
+    "screenshots": [
+      "./assets/readme/hero-card.svg",
+      "./assets/readme/terminal-preview.svg",
+      "./assets/readme/architecture.svg"
+    ]
+  }
+}

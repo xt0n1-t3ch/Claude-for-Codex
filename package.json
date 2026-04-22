@@ -1,0 +1,51 @@
+{
+  "name": "claude-in-codex",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A Codex plugin that runs your local Claude Code from inside Codex through a built-in /claude skill and a portable bridge.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xt0n1-t3ch/Claude-for-Codex.git"
+  },
+  "homepage": "https://github.com/xt0n1-t3ch/Claude-for-Codex",
+  "bugs": {
+    "url": "https://github.com/xt0n1-t3ch/Claude-for-Codex/issues"
+  },
+  "bin": {
+    "claude-in-codex": "./scripts/claude-in-codex.mjs",
+    "claude-in-codex-install": "./scripts/install.mjs"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "files": [
+    ".codex-plugin",
+    "assets",
+    "examples",
+    "scripts",
+    "skills",
+    "README.md",
+    "LICENSE",
+    "PRIVACY.md",
+    "TERMS.md"
+  ],
+  "scripts": {
+    "test": "node --test ./scripts/tests/command.test.mjs",
+    "doctor": "node ./scripts/claude-in-codex.mjs doctor",
+    "install:local": "node ./scripts/install.mjs"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "codex",
+    "codex-plugin",
+    "slash-command",
+    "realtime",
+    "local-first",
+    "ai-coding",
+    "developer-tools",
+    "pair-programming"
+  ]
+}

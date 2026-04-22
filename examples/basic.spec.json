@@ -1,0 +1,7 @@
+{
+  "workdir": "D:/X/YourRepo",
+  "profile": "design",
+  "permissionMode": "acceptEdits",
+  "streamVisibility": "events",
+  "prompt": "Improve the settings page layout and responsive spacing. Stay inside the frontend slice."
+}

@@ -1,0 +1,110 @@
+<svg width="960" height="500" viewBox="0 0 960 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Claude in Codex realtime preview — session metadata, per-tool progress lines, and completion summary">
+  <defs>
+    <linearGradient id="termBg" x1="0" y1="0" x2="960" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#13171F"/>
+      <stop offset="1" stop-color="#0D1016"/>
+    </linearGradient>
+    <linearGradient id="termTitle" x1="0" y1="18" x2="0" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171B23"/>
+      <stop offset="1" stop-color="#12161D"/>
+    </linearGradient>
+    <radialGradient id="termHalo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(820 420) scale(260 200)">
+      <stop stop-color="#E88E61" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#E88E61" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="termShadow" x="-40" y="-40" width="1040" height="580" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+    <clipPath id="termClip">
+      <rect x="20" y="18" width="920" height="464" rx="22"/>
+    </clipPath>
+    <style>
+      .sans { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace; }
+    </style>
+  </defs>
+
+  <g filter="url(#termShadow)">
+    <rect x="20" y="18" width="920" height="464" rx="22" fill="url(#termBg)"/>
+  </g>
+
+  <g clip-path="url(#termClip)">
+    <rect x="20" y="18" width="920" height="52" fill="url(#termTitle)"/>
+    <rect x="20" y="18" width="920" height="464" fill="url(#termHalo)"/>
+    <line x1="20" y1="70" x2="940" y2="70" stroke="#1B1F27"/>
+  </g>
+  <rect x="20.5" y="18.5" width="919" height="463" rx="21.5" stroke="#242935" fill="none"/>
+
+  <g transform="translate(44 44)">
+    <circle cx="0" cy="0" r="3" fill="#E88E61"/>
+    <circle cx="0" cy="0" r="6" stroke="#E88E61" stroke-opacity="0.26" fill="none"/>
+    <text x="18" y="4" class="sans" fill="#E8ECF2" font-size="12" font-weight="600">claude-in-codex</text>
+    <text x="132" y="4" class="mono" fill="#6A7078" font-size="11.5">·  session 7c3f…</text>
+  </g>
+
+  <g transform="translate(876 44)">
+    <text x="0" y="4" text-anchor="end" class="sans" fill="#E8ECF2" font-size="10" font-weight="800" letter-spacing="0.28em">LIVE</text>
+    <circle cx="10" cy="0" r="3" fill="#E88E61"/>
+    <circle cx="10" cy="0" r="6" stroke="#E88E61" stroke-opacity="0.32" fill="none"/>
+  </g>
+
+  <g transform="translate(56 108)">
+    <text x="0" y="0" class="sans" fill="#6A7078" font-size="10" font-weight="700" letter-spacing="0.26em">RUN</text>
+    <text x="0" y="22" class="mono" fill="#E8ECF2" font-size="13">general · opus · xhigh · dontAsk</text>
+
+    <text x="448" y="0" class="sans" fill="#6A7078" font-size="10" font-weight="700" letter-spacing="0.26em">WORKDIR</text>
+    <text x="448" y="22" class="mono" fill="#8FB2FF" font-size="13">~/code/claude-for-codex</text>
+
+    <text x="0" y="58" class="sans" fill="#6A7078" font-size="10" font-weight="700" letter-spacing="0.26em">PROMPT</text>
+    <text x="0" y="80" class="mono" fill="#D2D7E1" font-size="13">Improve the settings page layout and responsive spacing.</text>
+
+    <line x1="0" y1="108" x2="848" y2="108" stroke="#1B1F27"/>
+
+    <text x="0" y="138" class="sans" fill="#6A7078" font-size="10" font-weight="700" letter-spacing="0.26em">STREAM  ·  EVENTS</text>
+
+    <g transform="translate(0 166)">
+      <circle cx="3" cy="0" r="3.4" fill="#5FD37A"/>
+      <text x="20" y="4" class="sans" fill="#E8ECF2" font-size="12.5" font-weight="600">Claude Code ready</text>
+      <text x="166" y="4" class="mono" fill="#8B919C" font-size="12">claude-opus-4-7  ·  24 tools  ·  3 MCP servers</text>
+    </g>
+
+    <g transform="translate(0 196)">
+      <circle cx="3" cy="0" r="2.6" fill="#E88E61"/>
+      <text x="20" y="4" class="sans" fill="#E8ECF2" font-size="12.5" font-weight="600">Thinking</text>
+      <text x="86" y="4" class="mono" fill="#8B919C" font-size="12">planning responsive grid pass…</text>
+    </g>
+
+    <g transform="translate(0 226)">
+      <circle cx="3" cy="0" r="2.6" fill="#C9CED6"/>
+      <text x="20" y="4" class="sans" fill="#E8ECF2" font-size="12.5" font-weight="600">Bash</text>
+      <text x="58" y="4" class="mono" fill="#8B919C" font-size="12">verifying layout utilities</text>
+      <rect x="20" y="16" width="828" height="30" rx="8" fill="#0D1016" stroke="#1B2028"/>
+      <text x="34" y="35" class="mono" fill="#6A7078" font-size="12">$</text>
+      <text x="48" y="35" class="mono" fill="#D9DEE7" font-size="12">rg -l "responsive" src/settings</text>
+      <text x="308" y="35" class="mono" fill="#5FD37A" font-size="12">✓</text>
+      <text x="324" y="35" class="mono" fill="#8B919C" font-size="12">3 matches  ·  42ms</text>
+    </g>
+
+    <g transform="translate(0 284)">
+      <circle cx="3" cy="0" r="2.6" fill="#C9CED6"/>
+      <text x="20" y="4" class="sans" fill="#E8ECF2" font-size="12.5" font-weight="600">Read</text>
+      <text x="60" y="4" class="mono" fill="#8FB2FF" font-size="12">src/settings/page.tsx</text>
+      <text x="236" y="4" class="mono" fill="#8B919C" font-size="12">·  lines 1–160</text>
+    </g>
+
+    <g transform="translate(0 312)">
+      <circle cx="3" cy="0" r="2.6" fill="#C9CED6"/>
+      <text x="20" y="4" class="sans" fill="#E8ECF2" font-size="12.5" font-weight="600">Edit</text>
+      <text x="50" y="4" class="mono" fill="#8FB2FF" font-size="12">src/settings/page.tsx</text>
+      <text x="226" y="4" class="mono" fill="#5FD37A" font-size="12">+  responsive grid</text>
+    </g>
+
+    <line x1="0" y1="336" x2="848" y2="336" stroke="#1B1F27"/>
+
+    <g transform="translate(0 358)">
+      <circle cx="3" cy="0" r="3.4" fill="#5FD37A"/>
+      <text x="20" y="4" class="sans" fill="#E8ECF2" font-size="12.5" font-weight="700">Done</text>
+      <text x="66" y="4" class="mono" fill="#8B919C" font-size="12">5.5s  ·  2 turns  ·  $0.12  ·  7 in  ·  121 out</text>
+    </g>
+  </g>
+</svg>
