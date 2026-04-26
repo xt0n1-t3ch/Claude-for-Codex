@@ -66,6 +66,7 @@ node ./scripts/install.mjs
 - Copies the plugin to `~/.codex/plugins/claude-in-codex`
 - Updates `~/.agents/plugins/marketplace.json`
 - Enables the plugin in `~/.codex/config.toml`
+- Builds the native runner to `~/.codex/tools/claude/target/release/claude.exe` when Go is available
 - Refreshes the installed bundle at `~/.codex/plugins/cache/…`
 
 Restart Codex after install so the registry and plugin surfaces pick up the change.
@@ -76,6 +77,7 @@ Restart Codex after install so the registry and plugin surfaces pick up the chan
 | :--- | :--- |
 | **Node.js** | on `PATH`, `>= 18.18.0` |
 | **`claude` CLI** | on `PATH`, already signed in |
+| **Go** | optional, used to build the native runner; the Node bridge still works without it |
 | **Codex** | plugins enabled |
 
 ## <img src="./assets/readme/icon-usage.svg" alt="" width="18" height="18" /> Usage
@@ -151,11 +153,12 @@ Audit, review, plan, and explore are **read-only** by default — `Write`, `Edit
 ## <img src="./assets/readme/icon-validation.svg" alt="" width="18" height="18" /> Validation
 
 ```bash
+npm run build:native
 node --test ./scripts/tests/command.test.mjs
 node ./scripts/claude-in-codex.mjs doctor
 ```
 
-The first command runs the unit tests. The second is a lightweight environment probe that reports your Node version, your `claude` CLI version, and the native runner path. Exit code `0` means the `claude` CLI is reachable on your `PATH`.
+The first command builds the native runner. The second runs the unit tests. The third is a lightweight environment probe that reports your Node version, your `claude` CLI version, and the native runner path. Exit code `0` means the `claude` CLI is reachable on your `PATH`.
 
 <br />
 

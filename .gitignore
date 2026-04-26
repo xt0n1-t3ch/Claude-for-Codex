@@ -2,6 +2,7 @@ Thumbs.db
 .DS_Store
 *.tmp
 *.log
+target/
 
 # local dev previews (not shipped)
 .svg-preview.html
