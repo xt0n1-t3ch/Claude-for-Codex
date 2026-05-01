@@ -140,13 +140,13 @@ Each profile tunes the system prompt, default model, default effort, and tool pe
 
 | Family | Aliases | Default model | Default effort |
 | :--- | :--- | :---: | :---: |
-| **Design** | `design` · `frontend` · `ui` · `ux` · `polish` | `opus` | `high` |
-| **Audit** | `ui-audit` · `frontend-audit` · `ux-audit` | `opus` | `high` |
-| **Review** | `review` · `second-opinion` | `opus` | `high` |
-| **Planning** | `plan` · `architecture` · `architect` | `opus` | `high` |
-| **Debug** | `challenge` · `debug` · `investigation` | `opus` | `high` |
+| **Design** | `design` · `frontend` · `ui` · `ux` · `polish` | `claude-opus-4-6[1m]` | `high` |
+| **Audit** | `ui-audit` · `frontend-audit` · `ux-audit` | `claude-opus-4-6[1m]` | `high` |
+| **Review** | `review` · `second-opinion` | `claude-opus-4-6[1m]` | `high` |
+| **Planning** | `plan` · `architecture` · `architect` | `claude-opus-4-6[1m]` | `high` |
+| **Debug** | `challenge` · `debug` · `investigation` | `claude-opus-4-6[1m]` | `high` |
 | **Explore** | `explore` · `scout` | `haiku` | `high` |
-| **General** | `general` | `opus` | `medium` |
+| **General** | `general` | `claude-opus-4-6[1m]` | `medium` |
 
 Audit, review, plan, and explore are **read-only** by default — `Write`, `Edit`, `MultiEdit`, and `NotebookEdit` are disabled unless you explicitly broaden scope.
 

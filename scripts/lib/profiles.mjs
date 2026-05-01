@@ -1,10 +1,10 @@
 export const PROFILE_DEFAULTS = {
-  design: { model: 'opus', effort: 'high' },
-  'ui-audit': { model: 'opus', effort: 'high' },
-  review: { model: 'opus', effort: 'high' },
-  plan: { model: 'opus', effort: 'high' },
-  challenge: { model: 'opus', effort: 'high' },
-  general: { model: 'opus', effort: 'medium' },
+  design: { model: 'claude-opus-4-6[1m]', effort: 'high' },
+  'ui-audit': { model: 'claude-opus-4-6[1m]', effort: 'high' },
+  review: { model: 'claude-opus-4-6[1m]', effort: 'high' },
+  plan: { model: 'claude-opus-4-6[1m]', effort: 'high' },
+  challenge: { model: 'claude-opus-4-6[1m]', effort: 'high' },
+  general: { model: 'claude-opus-4-6[1m]', effort: 'medium' },
   explore: { model: 'haiku', effort: 'high' },
 };
 
@@ -42,7 +42,7 @@ export function normalizeCapabilityProfile(value = 'design') {
 }
 
 export function defaultModelForProfile(profile) {
-  return PROFILE_DEFAULTS[profile]?.model ?? 'opus';
+  return PROFILE_DEFAULTS[profile]?.model ?? 'claude-opus-4-6[1m]';
 }
 
 export function defaultEffortForProfile(profile) {

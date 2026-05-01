@@ -18,7 +18,7 @@ test('resolveInvocationSpec applies profile aliases and defaults', () => {
   });
 
   assert.equal(spec.capabilityProfile, 'design');
-  assert.equal(spec.model, 'opus');
+  assert.equal(spec.model, 'claude-opus-4-6[1m]');
   assert.equal(spec.effort, 'high');
   assert.equal(spec.permissionMode, 'acceptEdits');
   assert.equal(spec.outputFormat, 'stream-json');
@@ -58,7 +58,7 @@ test('buildClaudeArguments emits a non-interactive Claude Code invocation with p
   assert.deepEqual(args.slice(0, 9), [
     '-p',
     '--model',
-    'opus',
+    'claude-opus-4-6[1m]',
     '--effort',
     'high',
     '--output-format',
@@ -155,7 +155,7 @@ test('buildNativeRunnerArguments maps xhigh to max and forwards the delegated pr
     '--output-format',
     'text',
     '--model',
-    'opus',
+    'claude-opus-4-6[1m]',
     '--effort',
     'max',
   ]);

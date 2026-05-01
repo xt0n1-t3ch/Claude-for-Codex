@@ -759,6 +759,7 @@ async function spawnClaudeProcess(spec, io = {}) {
   suppressBrokenPipeErrors(stderr);
   const child = spawn(spec.claudeBin, buildClaudeArguments(spec), {
     cwd: spec.workdir,
+    env: { ...process.env, CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING: '1' },
     stdio: ['ignore', 'pipe', 'pipe'],
     shell: false,
     windowsHide: true,
@@ -787,6 +788,7 @@ async function spawnNativeRunnerProcess(spec, io = {}) {
   suppressBrokenPipeErrors(stderr);
   const child = spawn(spec.nativeRunnerBin, buildNativeRunnerArguments(spec), {
     cwd: spec.workdir,
+    env: { ...process.env, CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING: '1' },
     stdio: ['ignore', 'pipe', 'pipe'],
     shell: false,
     windowsHide: true,

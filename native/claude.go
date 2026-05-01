@@ -63,7 +63,7 @@ func parseArgs(args []string) (config, error) {
 		Profile:        "general",
 		PermissionMode: "acceptEdits",
 		OutputFormat:   "text",
-		Model:          "opus",
+		Model:          "claude-opus-4-6[1m]",
 		Effort:         "high",
 		ClaudeBin:      "claude",
 		Timeout:        defaultTimeout(),
@@ -197,6 +197,7 @@ func run(cfg config) error {
 
 	cmd := exec.CommandContext(ctx, cfg.ClaudeBin, buildClaudeArgs(cfg)...)
 	cmd.Dir = cfg.Workdir
+	cmd.Env = append(os.Environ(), "CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING=1")
 	stdout, err := cmd.StdoutPipe()
 	if err != nil {
 		return err

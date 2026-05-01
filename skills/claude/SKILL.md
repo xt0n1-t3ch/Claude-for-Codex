@@ -58,7 +58,7 @@ The installer builds the native runner when Go is available. The Node bridge aut
 - `profile` or `capabilityProfile`: one of the profiles above.
 - `permissionMode`: usually `dontAsk` for read-only or `acceptEdits` for implementation.
 - `streamVisibility`: `events` for friendly realtime output, `trace` for structured debug output, `raw` for exact Claude CLI NDJSON, or `text` for assistant text only.
-- `model`: defaults by profile; override only when needed.
+- `model`: defaults by profile; Opus profiles pin `claude-opus-4-6[1m]`; Explore stays `haiku` unless overridden.
 - `effort`: defaults by profile; `xhigh` maps through the bridge for the native runner.
 - `taskContext`: compact handoff context when delegating a slice.
 - `additionalDirectories`: optional extra directories forwarded with `--add-dir`.
