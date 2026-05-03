@@ -1,11 +1,14 @@
+export const DEFAULT_CLAUDE_MODEL = 'claude-opus-4-7[1m]';
+export const DEFAULT_CLAUDE_EFFORT = 'xhigh';
+
 export const PROFILE_DEFAULTS = {
-  design: { model: 'claude-opus-4-6[1m]', effort: 'high' },
-  'ui-audit': { model: 'claude-opus-4-6[1m]', effort: 'high' },
-  review: { model: 'claude-opus-4-6[1m]', effort: 'high' },
-  plan: { model: 'claude-opus-4-6[1m]', effort: 'high' },
-  challenge: { model: 'claude-opus-4-6[1m]', effort: 'high' },
-  general: { model: 'claude-opus-4-6[1m]', effort: 'medium' },
-  explore: { model: 'haiku', effort: 'high' },
+  design: { model: DEFAULT_CLAUDE_MODEL, effort: DEFAULT_CLAUDE_EFFORT },
+  'ui-audit': { model: DEFAULT_CLAUDE_MODEL, effort: DEFAULT_CLAUDE_EFFORT },
+  review: { model: DEFAULT_CLAUDE_MODEL, effort: DEFAULT_CLAUDE_EFFORT },
+  plan: { model: DEFAULT_CLAUDE_MODEL, effort: DEFAULT_CLAUDE_EFFORT },
+  challenge: { model: DEFAULT_CLAUDE_MODEL, effort: DEFAULT_CLAUDE_EFFORT },
+  general: { model: DEFAULT_CLAUDE_MODEL, effort: DEFAULT_CLAUDE_EFFORT },
+  explore: { model: DEFAULT_CLAUDE_MODEL, effort: DEFAULT_CLAUDE_EFFORT },
 };
 
 const PROFILE_ALIASES = new Map([
@@ -42,11 +45,11 @@ export function normalizeCapabilityProfile(value = 'design') {
 }
 
 export function defaultModelForProfile(profile) {
-  return PROFILE_DEFAULTS[profile]?.model ?? 'claude-opus-4-6[1m]';
+  return PROFILE_DEFAULTS[profile]?.model ?? DEFAULT_CLAUDE_MODEL;
 }
 
 export function defaultEffortForProfile(profile) {
-  return PROFILE_DEFAULTS[profile]?.effort ?? 'medium';
+  return PROFILE_DEFAULTS[profile]?.effort ?? DEFAULT_CLAUDE_EFFORT;
 }
 
 export function effectivePermissionMode(profile, requestedPermissionMode = 'acceptEdits') {
@@ -156,3 +159,4 @@ export function buildSystemPrompt(profile) {
   const selected = byProfile[profile] ?? byProfile.design;
   return [selected.baseRole, sharedBehavior, selected.qualityBar, selected.profilePrompt, selected.outputContract].join('\n\n');
 }
+

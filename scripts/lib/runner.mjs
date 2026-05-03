@@ -752,16 +752,26 @@ function printBridgePrelude(spec, stdout) {
   printPrettyPrelude(spec, stdout);
 }
 
+function quoteShellArg(value) {
+  const text = String(value);
+  if (/^[A-Za-z0-9_./:=@%+\-\\]+$/.test(text)) return text;
+  return `"${text.replaceAll('"', '\\"')}"`;
+}
+
+function spawnClaudeCommand(command, args, options) {
+  if (process.platform !== 'win32') return spawn(command, args, { ...options, shell: false });
+  return spawn([command, ...args].map(quoteShellArg).join(' '), { ...options, shell: true });
+}
+
 async function spawnClaudeProcess(spec, io = {}) {
   const stdout = io.stdout ?? process.stdout;
   const stderr = io.stderr ?? process.stderr;
   suppressBrokenPipeErrors(stdout);
   suppressBrokenPipeErrors(stderr);
-  const child = spawn(spec.claudeBin, buildClaudeArguments(spec), {
+  const child = spawnClaudeCommand(spec.claudeBin, buildClaudeArguments(spec), {
     cwd: spec.workdir,
-    env: { ...process.env, CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING: '1' },
+    env: { ...process.env },
     stdio: ['ignore', 'pipe', 'pipe'],
-    shell: false,
     windowsHide: true,
   });
 
@@ -788,7 +798,7 @@ async function spawnNativeRunnerProcess(spec, io = {}) {
   suppressBrokenPipeErrors(stderr);
   const child = spawn(spec.nativeRunnerBin, buildNativeRunnerArguments(spec), {
     cwd: spec.workdir,
-    env: { ...process.env, CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING: '1' },
+    env: { ...process.env },
     stdio: ['ignore', 'pipe', 'pipe'],
     shell: false,
     windowsHide: true,
@@ -903,9 +913,8 @@ export async function runDoctor(spec = {}) {
   const stdout = spec.stdout ?? process.stdout;
   const stderr = spec.stderr ?? process.stderr;
   const nativeRunnerBin = resolveNativeRunnerBin(spec.nativeRunnerBin);
-  const child = spawn(spec.claudeBin ?? process.env.CLAUDE_BIN ?? 'claude', ['--version'], {
+  const child = spawnClaudeCommand(spec.claudeBin ?? process.env.CLAUDE_BIN ?? 'claude', ['--version'], {
     stdio: ['ignore', 'pipe', 'pipe'],
-    shell: false,
     windowsHide: true,
   });
 

@@ -58,7 +58,7 @@ The installer builds the native runner when Go is available. The Node bridge aut
 - `profile` or `capabilityProfile`: one of the profiles above.
 - `permissionMode`: usually `dontAsk` for read-only or `acceptEdits` for implementation.
 - `streamVisibility`: `events` for friendly realtime output, `trace` for structured debug output, `raw` for exact Claude CLI NDJSON, or `text` for assistant text only.
-- `model`: defaults by profile; Opus profiles pin `claude-opus-4-6[1m]`; Explore stays `haiku` unless overridden.
+- `model`: defaults by profile; Opus profiles pin `claude-opus-4-7`; Explore uses the same default unless overridden.
 - `effort`: defaults by profile; `xhigh` maps through the bridge for the native runner.
 - `taskContext`: compact handoff context when delegating a slice.
 - `additionalDirectories`: optional extra directories forwarded with `--add-dir`.
@@ -102,4 +102,5 @@ node <plugin-root>\scripts\claude-in-codex.mjs --spec-file $spec
 ## Realtime trace expectations
 
 Friendly/native runs should show the profile/model/effort/permission, workdir, delegated prompt, Claude Code session readiness, thinking/status lines, tool calls, MCP calls, shell/read/write/edit summaries, tool results, assistant text, stderr if Claude emits it, timeout failures, and final completion metadata. Do not promise hidden chain-of-thought; only display the summaries and events exposed by Claude CLI.
+
 

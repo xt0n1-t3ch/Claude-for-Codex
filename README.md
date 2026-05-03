@@ -140,13 +140,13 @@ Each profile tunes the system prompt, default model, default effort, and tool pe
 
 | Family | Aliases | Default model | Default effort |
 | :--- | :--- | :---: | :---: |
-| **Design** | `design` · `frontend` · `ui` · `ux` · `polish` | `claude-opus-4-6[1m]` | `high` |
-| **Audit** | `ui-audit` · `frontend-audit` · `ux-audit` | `claude-opus-4-6[1m]` | `high` |
-| **Review** | `review` · `second-opinion` | `claude-opus-4-6[1m]` | `high` |
-| **Planning** | `plan` · `architecture` · `architect` | `claude-opus-4-6[1m]` | `high` |
-| **Debug** | `challenge` · `debug` · `investigation` | `claude-opus-4-6[1m]` | `high` |
-| **Explore** | `explore` · `scout` | `haiku` | `high` |
-| **General** | `general` | `claude-opus-4-6[1m]` | `medium` |
+| **Design** | `design` · `frontend` · `ui` · `ux` · `polish` | `claude-opus-4-7` | `medium` |
+| **Audit** | `ui-audit` · `frontend-audit` · `ux-audit` | `claude-opus-4-7` | `medium` |
+| **Review** | `review` · `second-opinion` | `claude-opus-4-7` | `medium` |
+| **Planning** | `plan` · `architecture` · `architect` | `claude-opus-4-7` | `medium` |
+| **Debug** | `challenge` · `debug` · `investigation` | `claude-opus-4-7` | `medium` |
+| **Explore** | `explore` · `scout` | `haiku` | `medium` |
+| **General** | `general` | `claude-opus-4-7` | `medium` |
 
 Audit, review, plan, and explore are **read-only** by default — `Write`, `Edit`, `MultiEdit`, and `NotebookEdit` are disabled unless you explicitly broaden scope.
 
@@ -169,3 +169,4 @@ The first command builds the native runner. The second runs the unit tests. The 
     <a href="./PRIVACY.md">Privacy</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="./TERMS.md">Terms</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="./LICENSE">Apache 2.0</a>
   </sub>
 </p>
+

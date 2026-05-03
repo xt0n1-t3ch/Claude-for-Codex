@@ -45,6 +45,9 @@ type streamState struct {
 	SawText       bool
 }
 
+const defaultClaudeModel = "claude-opus-4-6[1m]"
+const defaultClaudeEffort = "high"
+
 func main() {
 	cfg, err := parseArgs(os.Args[1:])
 	if err != nil {
@@ -63,8 +66,8 @@ func parseArgs(args []string) (config, error) {
 		Profile:        "general",
 		PermissionMode: "acceptEdits",
 		OutputFormat:   "text",
-		Model:          "claude-opus-4-6[1m]",
-		Effort:         "high",
+		Model:          defaultClaudeModel,
+		Effort:         defaultClaudeEffort,
 		ClaudeBin:      "claude",
 		Timeout:        defaultTimeout(),
 	}
